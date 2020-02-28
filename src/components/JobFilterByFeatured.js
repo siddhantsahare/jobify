@@ -1,10 +1,8 @@
 import React, { Fragment } from 'react';
 import { gql } from 'apollo-boost';
 import { Link } from 'react-router-dom';
-
 import { Query } from 'react-apollo';
-import Jobstat from './Jobstat';
-
+import Spinner from './Spinner';
 import Job from './Job';
 
 const GET_JOBS = gql`
@@ -30,7 +28,7 @@ const GET_JOBS = gql`
 const JobFilterByFeatured = () => {
   return (
     <Fragment>
-      <section className="section section-jobs">
+      <section className="container section section-filter">
         <div class="row">
           <div class="col s12 m6 l4">
             <Link to="/jobFilterByFullTime">
@@ -65,7 +63,14 @@ const JobFilterByFeatured = () => {
       <section class="section section-filterByFeatured">
         <Query query={GET_JOBS}>
           {({ loading, error, data }) => {
-            if (loading) return <div>Loading...</div>;
+            if (loading)
+              return (
+                <div>
+                  <div>
+                    <Spinner />
+                  </div>
+                </div>
+              );
             if (error) return console.log(error);
             console.log(data);
 

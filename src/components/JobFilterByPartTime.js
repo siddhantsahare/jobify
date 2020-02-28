@@ -1,9 +1,8 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
-
+import Spinner from './Spinner';
 import Job from './Job';
 
 const GET_JOBS = gql`
@@ -30,7 +29,7 @@ const JobFilterByPartTime = () => {
   const jobPartTime = [];
   return (
     <Fragment>
-      <section className="section section-jobs">
+      <section className="container section section-filter">
         <div class="row">
           <div class="col s12 m6 l4">
             <Link to="/jobFilterByFullTime">
@@ -65,7 +64,12 @@ const JobFilterByPartTime = () => {
       <section class="section section-filterByPartTime">
         <Query query={GET_JOBS}>
           {({ loading, error, data }) => {
-            if (loading) return <div>Loading...</div>;
+            if (loading)
+              return (
+                <div>
+                  <Spinner />
+                </div>
+              );
             if (error) return console.log(error);
 
             return (

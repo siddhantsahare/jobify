@@ -3,8 +3,22 @@
 }
 
 body {
-  background: #f5f5f5;
+  background: white;
 }
+
+.img-fluid {
+  width: 150px;
+  height: 150px;
+}
+/* .client {
+  background: #ffffff10;
+  box-shadow: var(--box-shadow);
+  margin: 3rem 0rem;
+}
+
+.client-img {
+  padding: 2rem;
+} */
 
 .section-jobs .button-group button {
   background: transparent;

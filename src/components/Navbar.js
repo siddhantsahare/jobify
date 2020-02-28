@@ -7,7 +7,7 @@ const Navbar = () => {
       <nav class="blue darken-2">
         <div class="container">
           <div class="nav-wrapper">
-            <Link to="/landing" class="brand-logo">
+            <Link to="/" class="brand-logo">
               Jobify
             </Link>
             <ul class="right hide-on-med-and-down">
