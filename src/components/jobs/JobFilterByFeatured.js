@@ -30,6 +30,9 @@ const JobFilterByFeatured = () => {
     <Fragment>
       <section className="container section section-filter">
         <div class="row">
+          <div>
+            <h5 className="blue-text">Filter by choice</h5>
+          </div>
           <div class="col s12 m6 l4">
             <Link to="/jobFilterByFullTime">
               <div class="card-panel center hoverable">

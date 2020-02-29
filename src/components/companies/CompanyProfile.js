@@ -35,6 +35,9 @@ const CompanyProfile = ({ match }) => {
 
             return (
               <Fragment>
+                <div className="container">
+                  <h5 className="blue-text">Jobs Available</h5>
+                </div>
                 {data.jobs.map(job => {
                   if (job.company.id === match.params.id) {
                     return (

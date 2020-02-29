@@ -41,6 +41,9 @@ const Companies = () => {
 
             return (
               <Fragment>
+                <div className="container">
+                  <h5 className="blue-text">All Companies</h5>
+                </div>
                 {data.companies.map(company => {
                   return <Company key={company.id} company={company} />;
                 })}
