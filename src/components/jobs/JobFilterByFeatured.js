@@ -33,7 +33,7 @@ const JobFilterByFeatured = () => {
           <div class="col s12 m6 l4">
             <Link to="/jobFilterByFullTime">
               <div class="card-panel center hoverable">
-                <i class="material-icons medium">insert_emoticon</i>
+                <i class="material-icons medium">schedule</i>
                 <h5>Full Time Jobs</h5>
                 <h3 class="count">76</h3>
               </div>
@@ -42,7 +42,7 @@ const JobFilterByFeatured = () => {
           <div class="col s12 m6 l4">
             <Link to="/jobFilterByPartTime">
               <div class="card-panel center hoverable">
-                <i class="material-icons medium">mode_edit</i>
+                <i class="material-icons medium">opacity</i>
                 <h5>Part Time Jobs</h5>
                 <h3 class="count">0</h3>
               </div>
@@ -52,7 +52,7 @@ const JobFilterByFeatured = () => {
           <div class="col s12 m6 l4">
             <Link to="/jobFilterByFeatured">
               <div class="card-panel center hoverable">
-                <i class="material-icons medium">mode_edit</i>
+                <i class="material-icons medium">thumb_up</i>
                 <h5>Featured Jobs</h5>
                 <h3 class="count">1</h3>
               </div>

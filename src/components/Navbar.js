@@ -8,17 +8,14 @@ const Navbar = () => {
         <div class="container">
           <div class="nav-wrapper">
             <Link to="/" class="brand-logo">
-              Jobify
+              <i class="material-icons medium right">code</i>Jobify
             </Link>
             <ul class="right hide-on-med-and-down">
-              <li>
-                <Link to="/jobs">Jobs</Link>
-              </li>
               <li>
                 <Link to="/companies">Companies</Link>
               </li>
               <li>
-                <Link to="/jobs">Create a Job</Link>
+                <Link to="/">Create a Job</Link>
               </li>
             </ul>
           </div>

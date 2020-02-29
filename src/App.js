@@ -6,7 +6,6 @@ import { ApolloProvider } from 'react-apollo';
 
 import Jobs from './components/jobs/Jobs';
 import Navbar from './components/Navbar';
-import Landing from './components/Landing';
 import JobFilterByFullTime from './components/jobs/JobFilterByFullTime';
 import JobFilterByPartTime from './components/jobs/JobFilterByPartTime';
 import JobFilterByFeatured from './components/jobs/JobFilterByFeatured';
@@ -29,8 +28,7 @@ function App() {
         <Fragment>
           <Navbar />
           <Switch>
-            <Route exact path="/" component={Landing} />
-            <Route exact path="/jobs" component={Jobs} />
+            <Route exact path="/" component={Jobs} />
             <Route
               exact
               path="/jobFilterByFullTime"
