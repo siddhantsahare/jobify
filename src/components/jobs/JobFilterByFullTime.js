@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 import Job from './Job';
-import Spinner from './Spinner';
+import Spinner from '../Spinner';
 
 const GET_JOBS = gql`
   query Jobs {
@@ -35,7 +35,7 @@ const JobFilterByFullTime = () => {
               <div class="card-panel center hoverable">
                 <i class="material-icons medium">insert_emoticon</i>
                 <h5>Full Time Jobs</h5>
-                <h3 class="count">70</h3>
+                <h3 class="count">76</h3>
               </div>
             </Link>
           </div>

@@ -4,13 +4,19 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 
-import Jobs from './components/Jobs';
+import Jobs from './components/jobs/Jobs';
 import Navbar from './components/Navbar';
 import Landing from './components/Landing';
-import JobFilterByFullTime from './components/JobFilterByFullTime';
-import JobFilterByPartTime from './components/JobFilterByPartTime';
-import JobFilterByFeatured from './components/JobFilterByFeatured';
+import JobFilterByFullTime from './components/jobs/JobFilterByFullTime';
+import JobFilterByPartTime from './components/jobs/JobFilterByPartTime';
+import JobFilterByFeatured from './components/jobs/JobFilterByFeatured';
+
+import Companies from './components/companies/Companies';
+
+import { Provider } from 'react-redux';
+
 import './App.css';
+import CompanyProfile from './components/companies/CompanyProfile';
 
 const client = new ApolloClient({
   uri: 'https://api.graphql.jobs'
@@ -40,6 +46,8 @@ function App() {
               path="/jobFilterByFeatured"
               component={JobFilterByFeatured}
             />
+            <Route exact path="/companies" component={Companies} />
+            <Route exact path="/companies/:id" component={CompanyProfile} />
           </Switch>
         </Fragment>
       </Router>

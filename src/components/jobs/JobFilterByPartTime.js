@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
-import Spinner from './Spinner';
+import Spinner from '../Spinner';
 import Job from './Job';
 
 const GET_JOBS = gql`
@@ -36,7 +36,7 @@ const JobFilterByPartTime = () => {
               <div class="card-panel center hoverable">
                 <i class="material-icons medium">insert_emoticon</i>
                 <h5>Full Time Jobs</h5>
-                <h3 class="count">70</h3>
+                <h3 class="count">76</h3>
               </div>
             </Link>
           </div>
@@ -85,9 +85,9 @@ const JobFilterByPartTime = () => {
                   <div class="container row">
                     <div class="card blue lighten-4 col s12 m12">
                       <div class="card card-content center">
-                        <h4>Oops We don't have companies</h4>
+                        <h4>Oopss!!!</h4>
                         <div class="card card-content blue lighten-4">
-                          <h4>That Have part time jobs available</h4>
+                          <h4>No part time jobs available right now</h4>
                         </div>
 
                         <div class="card card-action">

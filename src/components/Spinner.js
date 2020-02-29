@@ -9,7 +9,7 @@ export default () => (
         width: '200px',
         margin: 'auto',
         display: 'block',
-        background: '#f5f5f5;'
+        background: '#f5f5f5'
       }}
       alt="Loading..."
     />

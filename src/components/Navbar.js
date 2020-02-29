@@ -12,10 +12,10 @@ const Navbar = () => {
             </Link>
             <ul class="right hide-on-med-and-down">
               <li>
-                <Link to="/jobs">View Jobs</Link>
+                <Link to="/jobs">Jobs</Link>
               </li>
               <li>
-                <Link to="/jobs">Companies</Link>
+                <Link to="/companies">Companies</Link>
               </li>
               <li>
                 <Link to="/jobs">Create a Job</Link>
